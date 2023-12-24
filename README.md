@@ -1,24 +1,33 @@
-# Nama Proyek
+# Sistem Pembayaran Listrik
 
-Deskripsi singkat proyek dan tujuannya.
+Program ini merupakan implementasi sederhana dari Sistem Pembayaran Listrik berbasis Java. Program memungkinkan pengguna untuk mengelola saldo, membeli pulsa, dan membeli token listrik dengan antarmuka tekstual yang mudah digunakan.
 
-## Daftar Isi
+## Fitur Utama
+1. Isi Saldo: Pengguna dapat mengisi saldo akun mereka.
+2. Beli Pulsa: Pembelian pulsa dengan nilai tertentu.
+3. Beli Token Listrik: Pembelian token listrik sesuai harga yang ditentukan.
+4. Riwayat Transaksi: Melihat riwayat pembelian pulsa dan token listrik.
 
-- [Fitur](#fitur)
-- [Persyaratan Sistem](#persyaratan-sistem)
-- [Instalasi](#instalasi)
-- [Penggunaan](#penggunaan)
-- [Kontribusi](#kontribusi)
-- [Lisensi](#lisensi)
+## Model Class
+1. **Pelanggan (Akun):**
+   - Atribut: nama, saldo.
+   - Metode: isiSaldo(), beliPulsa(), beliTokenListrik(), tampilkanRiwayatTransaksi().
 
-## Fitur
+2. **Transaksi (Interface):**
+   - Metode: lakukanTransaksi(), getHarga().
 
-Deskripsi singkat fitur utama proyek.
+3. **TokenListrik (Transaksi):**
+   - Atribut: nilaiToken.
+   - Metode: lakukanTransaksi(), getHarga().
 
-## Persyaratan Sistem
+4. **Pulsa (Transaksi):**
+   - Atribut: nilaiPulsa.
+   - Metode: lakukanTransaksi(), getHarga().
 
-Daftar persyaratan sistem atau dependensi yang diperlukan untuk menjalankan proyek.
+## Cara Menggunakan
+1. Jalankan program dengan menjalankan file `Main.java`.
+2. Ikuti instruksi pada layar untuk melakukan transaksi.
 
-## Instalasi
-
-Petunjuk langkah demi langkah tentang cara menginstal dan mengonfigurasi proyek.
+## Kontributor
+- **Faathir Akbar Nugroho**
+  - NPM: 4522210033
